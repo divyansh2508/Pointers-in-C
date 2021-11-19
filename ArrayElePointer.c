@@ -4,7 +4,7 @@
 
 int main () {
     int m , n , index1 , index2;
-    printf("Enter dimensions of array: ");
+    printf("Enter size of array[] []: ");
     scanf("%d %d",&m,&n);
 
     int arr[m][n];
