@@ -1,4 +1,5 @@
-// A C program to sort a given array.
+// A C program to sort a given array using pointers.
+// Bubble Sort is used to sort the given array.
 
 #include <stdio.h>
 
@@ -23,6 +24,7 @@ int main () {
             // Condition used using pointers.
             if (*(ptr+m) < *(ptr+l)) {
                 // Swapping elements if required (using pointers).
+                // Bubble sort.                 
                 int temp = *(ptr+m);
                 *(ptr+m) = *(ptr+l);
                 *(ptr+l) = temp;
