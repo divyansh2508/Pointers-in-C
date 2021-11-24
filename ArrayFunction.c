@@ -1,4 +1,5 @@
 // A C program to pass an array into a function using pointers.
+// This program uses the concept of "Call by reference".
 
 #include <stdio.h>
 void main () {
