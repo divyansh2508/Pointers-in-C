@@ -1,7 +1,6 @@
 // A C program to pass an array into a function using pointers.
 
 #include <stdio.h>
-
 void main () {
     int n;
     printf("Enter length of array: ");
@@ -21,7 +20,6 @@ void main () {
     for (int k = 0; k<n; k++) {
         printf("%d ",*(arr+k));
     }
-
 }
 
 void ModifyArray (int *arr , int n) {
