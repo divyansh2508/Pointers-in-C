@@ -7,6 +7,7 @@ void main () {
     printf("Enter two numbers: ");
     scanf("%d %d",&num1,&num2);
 
+    // Printing the values input by the user.    
     printf("Num 1 = %d",num1);
     printf("\nNum 2 = %d",num2);
 
@@ -21,6 +22,7 @@ void swap (int *num1 , int *num2) {
     *num1 = *num2;
     *num2 = temp;
 
+    // Printing the swapped values. 
     printf("\n\nNum 1 = %d",*num1);
     printf("\nNum 2 = %d",*num2);
     printf("\n");
