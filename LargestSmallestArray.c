@@ -13,12 +13,8 @@ void Largest(int *arr , int n) {
             max = *(arr+j);
         }
     }
-
-    // Loop used to print the largest element.
-    for (int k=0; k<n; k++) {
-        printf("Largest element of the array is %d.\n",max);
-        break;
-    }
+    
+    printf("Largest element of the array is %d.\n",max);
 }
 
 // Function used to find the smallest element of the array.
@@ -32,11 +28,7 @@ void Smallest(int *arr , int n) {
             }
         }
 
-        // Loop used to print the smallest element.
-        for (int m=0; m<n; m++) {
-            printf("Smallest element of the array is %d.\n",min);
-            break;
-        }
+       printf("Smallest element of the array is %d.\n",min);
     }
 
 int main () {
