@@ -2,6 +2,14 @@
 // This program uses the concept of "Call by reference".
 
 #include <stdio.h>
+
+void ModifyArray (int *arr , int n) {
+    // Loop used to modify the array.
+    for (int j=0; j<n; j++) {
+        *(arr+j) += 3;  
+    }
+}
+
 void main () {
     int n;
     printf("Enter length of array: ");
@@ -23,9 +31,3 @@ void main () {
     }
 }
 
-void ModifyArray (int *arr , int n) {
-    // Loop used to modify the array.
-    for (int j=0; j<n; j++) {
-        *(arr+j) += 3;  
-    }
-}
