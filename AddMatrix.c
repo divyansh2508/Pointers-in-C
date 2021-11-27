@@ -1,10 +1,12 @@
+// A C program to add two matrices using pointers.
 #include <stdio.h>
 
 int main () {
     int m , n; 
     printf("Enter size of Matrix [] []: ");
     scanf("%d %d",&m,&n);
-
+    
+    // Since we need to add two matrices their order has to be same.    
     int arr1[m][n];
     int arr2[m][n];
 
@@ -46,7 +48,7 @@ int main () {
 
     printf("\n\nAdded Matrix is:\n");
 
-    // Loops used to add two matrix.
+    // Loops used to add two matrix and print them.
     for (int x=0; x<m; x++) {
         for (int y=0; y<n; y++) {
             printf("%d ",*(*(arr1+x)+y) + *(*(arr2+x)+y));
