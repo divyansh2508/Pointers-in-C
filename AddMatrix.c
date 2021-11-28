@@ -46,7 +46,7 @@ int main () {
         printf("\n");
     }
 
-    printf("\n\nAdded Matrix is:\n");
+    printf("\n\nResultant Matrix is:\n");
 
     // Loops used to add two matrix and print them.
     for (int x=0; x<m; x++) {
