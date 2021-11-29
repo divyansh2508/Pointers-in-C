@@ -1,4 +1,4 @@
-// A C program to multiply , add & subtract two numbers as per users choice.
+// A C program to multiply , add & subtract two numbers as per users choice (using pointers).
 // Menu driven approach is used.
 
 #include <stdio.h>
