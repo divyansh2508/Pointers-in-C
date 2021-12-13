@@ -1,3 +1,4 @@
+// A C program to recieve and print student details,
 #include <stdio.h>
 
 //malloc() int *x = (int *) malloc (10*sizeof(int))
