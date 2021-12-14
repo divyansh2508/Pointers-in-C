@@ -1,4 +1,4 @@
-// A C program to recieve and print student details,
+// A C program to recieve and print student details using dynamic memory allocation and pointers.
 #include <stdio.h>
 
 //malloc() int *x = (int *) malloc (10*sizeof(int))
