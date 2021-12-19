@@ -1,4 +1,4 @@
-// A C program to add two matrices using pointers...
+// A C program to add two matrices using pointers.
 #include <stdio.h>
 
 int main () {
