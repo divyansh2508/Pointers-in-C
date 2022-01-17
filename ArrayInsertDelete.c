@@ -3,33 +3,10 @@
 // Ex 7.2 --> Q2
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int main () {
-    int n;
-    printf("Enter length of array: ");
-    scanf("%d",&n);
-
-    int arr[100];
-    
-    // Loop used to take input of array elements.
-    for (int i=0; i<n; i++) {
-        printf("Enter %d element: ",i+1);
-        scanf("%d",arr+i);
-    }
-
-    // Menu
-    printf("\n\t\tPress:");
-    printf("\n\t1 to insert an element.");
-    printf("\n\t2 to delete an element.");
-    printf("\n\tEnter your choice: ");
-    
-    int ch;
-    scanf("%d",&ch);
-
-    // Using switch-case to provide a menu to the user.
-    switch (ch) 
-
-    case 1: {
+// A function InsertElement is called when user choses choice 1.
+void InsertElement (int arr[] , int n) {
         int index , insert_element;
         printf("\nEnter index to insert an element: ");
         scanf("%d",&index);
@@ -48,10 +25,10 @@ int main () {
         for (int k=0; k<n; k++) {
             printf("%d ",*(arr+k));
         }
-        // Break statement used to stop the flow of program after executing choice 1.
-        break;    
+}
 
-    case 2: {
+// A function DeleteElement is called when user choses choice 2.
+void DeleteElement (int arr[] , int n) {
         int index_delete;
         printf("\n\nEnter index of element to be deleted: ");
         scanf("%d",&index_delete);
@@ -71,10 +48,49 @@ int main () {
         for (int x=0; x<n-1; x++) {
             printf("%d ",*(arr+x));
         }
+}
+
+void main () {
+    int n;
+    printf("Enter length of array: ");
+    scanf("%d",&n);
+
+    int arr[100];
+    
+    // Loop used to take input of array elements.
+    for (int i=0; i<n; i++) {
+        printf("Enter %d element: ",i+1);
+        scanf("%d",arr+i);
+    }
+
+    // Menu
+    printf("\n\t\tPress:");
+    printf("\n\t1 to insert an element.");
+    printf("\n\t2 to delete an element.");
+    printf("\n\t3 to Exit");
+    printf("\n\tEnter your choice: ");
+    
+    int ch;
+    scanf("%d",&ch);
+
+    // Using switch-case to provide a menu to the user.
+    switch (ch) {
+    case 1: {
+            InsertElement(arr , n);
+            // Break statement used to stop the flow of program after executing choice 1.
+            break;    
+        }
+
+    case 2: {
+        DeleteElement(arr , n);
         // Break statement used to stop the flow of program after executing choice 2.
         break;
     }
+    case 3: {
+        // Exit function used to stop the program as per users
+        exit(0);
+        // Break statement used to stop the flow of program after executing choice 3.
+        break;
+    }
 }
-
-    return 0;
 }
